@@ -8,11 +8,14 @@ def a_power_b(a, b):
 
 
 def main():
-    a = int(input("Numero a: "))
-    b = int(input("Numero b: "))
-    result = a_power_b(a, b)
+    while True:
+        a = int(input("Numero a: "))
+        if not a:
+            break
+        b = int(input("Numero b: "))
+        result = a_power_b(a, b)
 
-    print(result)
+        print(result)
 
 
 if __name__ == "__main__":
