@@ -35,5 +35,6 @@ def main():
         msg = "is not prime"
     print(f"{primes} {msg}")
 
+
 if __name__ == '__main__':
     main()
