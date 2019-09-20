@@ -21,7 +21,6 @@ def perfect_number(number):
 def near_to_perfect(number):
     divisors = tuple(extract_divisors(number))
     sumatory = sum(divisors)
-    print(sumatory)
     return sumatory - 3 <= number <= sumatory + 3
 
 
