@@ -33,6 +33,7 @@ def main():
         err, a = _input("Numero a: ")
         errs += err
         if not a:
+            print()
             break
         err, b = _input("Numero b: ", True)
         errs += err
@@ -44,6 +45,7 @@ def main():
             odds += 1
         else:
             even += 1
+        print()
     print(f"Potencias calculadas {even + odds}")
     print(f"Resultados pares: {even}")
     print(f"Resultados impares: {odds}")
