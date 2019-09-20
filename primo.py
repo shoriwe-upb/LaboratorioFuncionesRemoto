@@ -12,6 +12,7 @@ def is_prime(number):
 
 
 def main():
+    primes = 0
     while True:
         try:
             number = int(input("Numero N: "))
@@ -20,12 +21,19 @@ def main():
             result = is_prime(number)
 
             if result:
+                primes += 1
                 print(1)
             else:
                 print(0)
         except ValueError:
             print(-1)
 
+    print(f"{primes} primes founded")
+    if is_prime(primes):
+        msg = "is prime"
+    else:
+        msg = "is not prime"
+    print(f"{primes} {msg}")
 
 if __name__ == '__main__':
     main()
