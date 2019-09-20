@@ -44,6 +44,7 @@ def main():
             odds += 1
         else:
             even += 1
+    print(f"Potencias calculadas {even + odds}")
     print(f"Resultados pares: {even}")
     print(f"Resultados impares: {odds}")
     print(f"Numero de errores: {errs}")
