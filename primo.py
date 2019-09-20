@@ -12,13 +12,19 @@ def is_prime(number):
 
 
 def main():
-    number = int(input("Numero N: "))
-    result = is_prime(number)
+    while True:
+        try:
+            number = int(input("Numero N: "))
+            if number <= 0:
+                break
+            result = is_prime(number)
 
-    if result:
-        print("Is a prime number")
-    else:
-        print("Is NOT a prime number")
+            if result:
+                print(1)
+            else:
+                print(0)
+        except:
+            print(-1)
 
 
 if __name__ == '__main__':
