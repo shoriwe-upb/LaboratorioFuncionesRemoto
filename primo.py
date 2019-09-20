@@ -23,7 +23,7 @@ def main():
                 print(1)
             else:
                 print(0)
-        except:
+        except ValueError:
             print(-1)
 
 
